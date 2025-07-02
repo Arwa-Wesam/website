@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Simple Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+    body{
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+   }
+   nav{
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    background-color: #0074D9;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+
+   }
+   nav a{
+    text-decoration: none;
+    color: white;
+   }
+   .nav-links{
+    display: flex;
+    gap:1rem;
+    align-items: center;
+   } 
+   .home{
+    font-family: 'Pacifico', cursive;
+    font-size: larger;
+    color: white;
+    padding-right: 20px;
+    margin-right: 20px;
+   } 
+   section{
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+   }
+   .profile img{
+    width: 150px;
+    border-radius: 50%;
+   }
+
+   .profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+   }
+   button{
+    background-color: #0074D9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+   }
+   .video-container{
+    text-align: center;
+    align-items: center;
+   }
+    .video-container video{
+      max-width: 100%;
+    }
+    footer{
+      text-align: center;
+      background-color: #0074D9;
+      color: white;
+      width: 100%;
+      padding: 20px;
+    }
+    footer a{
+      color: white;
+    }
+</style>
+</head>
+<body>
+ 
+  <nav>
+    <div  class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+      
+    </div>
+    <a class= "home"href="we.html">My portfolio</a>
+      
+   
+  </nav>
+
+  <section id="about" class="profile">
+    <img src="myphoto.jpeg" alt="Profile Photo">
+    <h2 id="textBox">Hi, I'm a Web Developer!</h2>
+    <p>I’m a passionate and results-driven Web Developer with a strong foundation in front-end and back-end technologies. With hands-on experience in building responsive, user-friendly websites and web applications, I specialize in creating seamless digital experiences that align with business goals and user needs. I work confidently with HTML, CSS, JavaScript</p>
+    <a href="#work"><button> <i class="fa-solid fa-envelope-open-text"></i> see my work</button></a>
+  </section>
+
+  <section class="video-container">
+    <h2>Introduction Video</h2>
+    <video controls autoplay loop>
+      <source src="video.mp4" type="video/mp4" >
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills">
+      <div class="skill-box">HTML</div>
+      <div class="skill-box">CSS</div>
+      <div class="skill-box">JavaScript</div>
+      <div class="skill-box">Responsive Design</div>
+    </div>
+  </section>
+
+  <section id="work">
+    <h2>My Work</h2>
+    <div class="work">
+      <div class="work-box">
+        <img src="projectimg.jpeg" alt="Project 1" style="width: 100%; border-radius: 5px;">
+        <p class="date">December 2023</p>
+        <p><strong> Aamen</strong><br> Aamem website for awareness about cyber security and how to be save on the Internet with providing tools help teens and children how to face any problem , you can reach the website from the link provided .</p>
+        
+      </div>
+      <div class="work-box">
+        <img src="project1.jpeg" alt="Project 2" style="width: 100%; border-radius: 5px;">
+        <p class="date">Aug 2024</p>
+        <p><strong> Project summer camp level 2 </strong><br> Mindset masters was my team and I was the leader we make a solve to a mental health problem with creating a website help teens with facing anxiety and bullying , you can reach the website here : https://arwa-wesam.github.io/Mindset-Masters-DECI-L2/</p>
+        
+      </div>
+    </div>
+
+
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: myemail@example.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Portfolio</p>
+    <p>Follow me on 
+      <a href="" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="" target="_blank"><i class="fab fa-github"></i></a>
+    </p>
+  </footer>
+</body>
+</html>
